@@ -29,6 +29,7 @@ public class LabFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.test, container, false);
 
         Bundle extra = getArguments();
+
         Integer pos = extra.getInt("pos");
         sp = getActivity().getPreferences(Context.MODE_PRIVATE);
         fontsize = sp.getInt(PREF_FONT_SIZE, 15);
